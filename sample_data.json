@@ -1,0 +1,93 @@
+[
+  {
+    "component_id": "RDBMS_PRIMARY_01",
+    "component_type": "rdbms",
+    "error_type": "connection_pool_exhausted",
+    "severity": "critical",
+    "message": "All 100 connections in pool are occupied — new queries are being rejected",
+    "timestamp": "2026-05-01T10:00:00Z"
+  },
+  {
+    "component_id": "RDBMS_PRIMARY_01",
+    "component_type": "rdbms",
+    "error_type": "replication_lag",
+    "severity": "critical",
+    "message": "Replication lag exceeded 30s — replica is falling behind primary",
+    "timestamp": "2026-05-01T10:00:02Z"
+  },
+  {
+    "component_id": "RDBMS_PRIMARY_01",
+    "component_type": "rdbms",
+    "error_type": "disk_io_timeout",
+    "severity": "high",
+    "message": "Disk I/O wait time spiked to 8200ms — possible storage bottleneck",
+    "timestamp": "2026-05-01T10:00:04Z"
+  },
+  {
+    "component_id": "RDBMS_PRIMARY_01",
+    "component_type": "rdbms",
+    "error_type": "slow_query_threshold",
+    "severity": "high",
+    "message": "47 queries exceeded 5000ms execution threshold in the last 60 seconds",
+    "timestamp": "2026-05-01T10:00:06Z"
+  },
+  {
+    "component_id": "RDBMS_PRIMARY_01",
+    "component_type": "rdbms",
+    "error_type": "deadlock_detected",
+    "severity": "critical",
+    "message": "Deadlock detected between transactions T-1092 and T-1093 on table orders",
+    "timestamp": "2026-05-01T10:00:07Z"
+  },
+
+  {
+    "component_id": "API_GATEWAY_01",
+    "component_type": "api",
+    "error_type": "upstream_timeout",
+    "severity": "high",
+    "message": "Upstream calls to user-service timing out after 3000ms — circuit breaker at 68%",
+    "timestamp": "2026-05-01T10:00:10Z"
+  },
+  {
+    "component_id": "API_GATEWAY_01",
+    "component_type": "api",
+    "error_type": "error_rate_spike",
+    "severity": "high",
+    "message": "5xx error rate climbed to 34% — SLO breach imminent (threshold: 5%)",
+    "timestamp": "2026-05-01T10:00:12Z"
+  },
+  {
+    "component_id": "API_GATEWAY_01",
+    "component_type": "api",
+    "error_type": "rate_limit_cascade",
+    "severity": "medium",
+    "message": "Downstream clients triggering rate limits due to retry storms from 5xx responses",
+    "timestamp": "2026-05-01T10:00:14Z"
+  },
+
+  {
+    "component_id": "CACHE_CLUSTER_01",
+    "component_type": "cache",
+    "error_type": "connection_timeout",
+    "severity": "high",
+    "message": "Cache cluster unreachable — TCP handshake timeout after 2000ms on all 3 nodes",
+    "timestamp": "2026-05-01T10:00:18Z"
+  },
+  {
+    "component_id": "CACHE_CLUSTER_01",
+    "component_type": "cache",
+    "error_type": "eviction_rate_critical",
+    "severity": "medium",
+    "message": "Memory pressure causing 91% eviction rate — effective cache-hit ratio dropped to 8%",
+    "timestamp": "2026-05-01T10:00:20Z"
+  },
+
+  {
+    "component_id": "MCP_HOST_01",
+    "component_type": "mcp_host",
+    "error_type": "tool_execution_failure",
+    "severity": "high",
+    "message": "MCP tool executor failing — 100% of tool calls returning internal error since 10:00:05Z",
+    "timestamp": "2026-05-01T10:00:22Z"
+  }
+]
