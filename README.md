@@ -2,7 +2,7 @@
 
 > Production-grade Incident Management System that monitors distributed infrastructure and manages the full incident lifecycle — from signal ingestion to root cause analysis.
 
----
+----
 
 ## Architecture
 
